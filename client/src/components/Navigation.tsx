@@ -7,6 +7,7 @@ import logoImg from "@assets/ChatGPT_Image_Jan_20,_2026,_10_16_10_AM_17688682037
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
   { label: "Products", href: "/#products" },
+  { label: "Mobile App", href: "/#app" },
   { label: "Comparison", href: "/#comparison" },
   { label: "Specs", href: "/#specs" },
   { label: "Contact", href: "/#contact" },

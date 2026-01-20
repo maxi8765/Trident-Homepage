@@ -1,11 +1,14 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Check, Activity, Battery, Cloud, Wifi, ChevronDown, Loader2 } from "lucide-react";
+import { ArrowRight, Check, Activity, Battery, Cloud, Wifi, ChevronDown, Loader2, Smartphone, Radio, Shield, Settings } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { ProductCard } from "@/components/ProductCard";
 import { ContactForm } from "@/components/ContactForm";
 import { useProducts } from "@/hooks/use-products";
 import heroBg from "@assets/slide_2_1768867480432.png";
 import productShot from "@assets/slide_1_1768867480431.png";
+import appScreen1 from "@assets/Screenshot_2026-01-20-10-17-42-30_40deb401b9ffe8e1df2f1cc5ba48_1768869177745.jpg";
+import appScreen2 from "@assets/Screenshot_2026-01-20-10-17-45-01_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
+import appScreen3 from "@assets/Screenshot_2026-01-20-10-17-47-77_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
 
 // Animation variants
 const fadeIn = {
@@ -321,6 +324,88 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MOBILE APP SECTION */}
+      <section id="app" className="py-24 relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+        
+        <div className="container px-4 mx-auto">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+            >
+              <motion.div variants={fadeIn} className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold">
+                <Smartphone className="w-4 h-4" />
+                PWA Mobile App
+              </motion.div>
+              
+              <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Onetime Reader <span className="text-primary">Manager</span>
+              </motion.h2>
+              <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Manage all your Trident readers from a single mobile app. Connect via STA WiFi or LoRaWAN mesh 
+                network to configure, monitor, and backup data from every reader in your race - all from your phone.
+              </motion.p>
+              
+              <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[
+                  { icon: Wifi, title: "STA WiFi & LoRaWAN", desc: "Multiple connectivity options" },
+                  { icon: Settings, title: "Full Configuration", desc: "Configure every reader setting" },
+                  { icon: Activity, title: "Live Telemetry", desc: "Real-time battery, temp & status" },
+                  { icon: Shield, title: "Data Backup", desc: "Secure cloud & local backup" },
+                ].map((feature, i) => (
+                  <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
+                    <feature.icon className="w-8 h-8 text-primary shrink-0" />
+                    <div>
+                      <h4 className="font-bold text-white mb-1">{feature.title}</h4>
+                      <p className="text-sm text-muted-foreground">{feature.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative flex justify-center items-center gap-4"
+            >
+              <div className="relative -rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-[180px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
+                  <img 
+                    src={appScreen1}
+                    alt="Reader Status Screen" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="relative z-10 scale-110">
+                <div className="w-[200px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
+                  <img 
+                    src={appScreen2}
+                    alt="Reader Configuration Screen" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="relative rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-[180px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
+                  <img 
+                    src={appScreen3}
+                    alt="Reader Commands Screen" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
