@@ -368,11 +368,9 @@ export default function Home() {
               </motion.h2>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
                 Trident is managed through a browser-based progressive web app. No local software required. 
-                Configure RFID readers, monitor status, manage connectivity, apply firmware updates, and route data. 
+                Connects via Reader STA WiFi. Configure RFID readers, monitor status, manage connectivity, 
+                apply firmware updates, and route data. Provides redundant data backup locally and to any cloud storage. 
                 Operators select their preferred timing software and data ingestion endpoint during setup.
-              </motion.p>
-              <motion.p variants={fadeIn} className="text-md text-muted-foreground mb-8 leading-relaxed">
-                Real-time timing data and telemetry are forwarded using open, documented protocols.
               </motion.p>
               
               <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
