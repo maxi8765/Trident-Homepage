@@ -180,6 +180,65 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMPARISON SECTION */}
+      <section id="comparison" className="py-24 relative">
+        <div className="container px-4 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Comparison</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Both technologies run on the same RFID readers, app, and integration model — allowing mixed deployments without added operational complexity.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* UHF Column */}
+            <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-blue-500 hover:border-blue-400 transition-colors">
+              <h3 className="text-2xl font-bold mb-2">Passive UHF</h3>
+              <p className="text-sm text-blue-400 font-mono mb-6">Mass Participation Running & Cycling</p>
+              
+              <ul className="space-y-4">
+                {[
+                  "Low tag cost and high throughput",
+                  "Disposable tags sourced from any supplier",
+                  "Unlocked — use standard EPC Gen2 UHF tags",
+                  "Validated UHF bib tags also available",
+                  "Open software protocols (LLRP, IPICO)"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                    <span className="text-gray-300">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Active Column */}
+            <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-purple-500 hover:border-purple-400 transition-colors relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 blur-2xl rounded-full" />
+              
+              <h3 className="text-2xl font-bold mb-2">Active HF</h3>
+              <p className="text-sm text-purple-400 font-mono mb-6">Higher Accuracy & Environmental Robustness</p>
+              
+              <ul className="space-y-4">
+                {[
+                  "Performs reliably through water, mud, and dense athlete packs",
+                  "Reusable waterproof shoe and multisport tags",
+                  "Designed for extreme environments",
+                  "Multi-year tag reuse",
+                  "Ideal for triathlon, swimming, and obstacle events",
+                  "Proven industry-lowest carbon footprint"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
+                    <span className="text-gray-300">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRODUCTS SECTION */}
       <section id="products" className="py-24 bg-black/20">
         <div className="container px-4 mx-auto">
@@ -239,6 +298,52 @@ export default function Home() {
               </div>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* SPECS SECTION */}
+      <section id="specs" className="py-24 bg-white/5">
+        <div className="container px-4 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Reader — Key Specs</h2>
+            <p className="text-muted-foreground">Professional RFID chip reader, passive UHF or active HF</p>
+          </div>
+          <div className="flex flex-col gap-16 max-w-4xl mx-auto">
+            <div>
+              <div className="space-y-6">
+                {[
+                  { label: "Reader Size", value: "3.8 × 7.3 × 4.1 inches" },
+                  { label: "Reader Mass", value: "4.75 lb (1.7 kg)" },
+                  { label: "IP Rating", value: "IP68 waterproof" },
+                  { label: "Battery Life", value: "Up to 10 hours (UHF) / 72 hours (HF)" },
+                  { label: "Operation", value: "Single-button with LED and buzzer indicators" },
+                  { label: "Connectivity", value: "Global SIM, LoRa up to 10 km, Wi-Fi, Dual PoE" },
+                  { label: "Updates", value: "Over-the-air firmware and configuration" },
+                  { label: "Software Integration", value: "LLRP and legacy formats including IPICO" },
+                  { label: "Compatibility", value: "Works with any timing software" },
+                  { label: "UHF Tags", value: "Unlocked — use any supplier, or use ours" },
+                  { label: "HF Tags", value: "Reusable waterproof multi-year active shoe-tags and multi-sport tags" },
+                ].map((spec, i) => (
+                  <div key={i} className="flex justify-between items-center py-4 border-b border-white/10">
+                    <span className="text-muted-foreground">{spec.label}</span>
+                    <span className="font-bold text-white text-right">{spec.value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden tech-border">
+              {/* Lock Image Background */}
+              <img src={lockImage} alt="Open System" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/40" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center p-8 backdrop-blur-sm bg-black/30 rounded-xl border border-white/10">
+                  <div className="text-5xl font-bold text-white mb-2">Open System</div>
+                  <div className="text-xl text-blue-300 uppercase tracking-widest">No Proprietary Lock-In</div>
+                  <div className="text-sm text-muted-foreground mt-2">Compatible with any timing software</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -382,111 +487,6 @@ export default function Home() {
             ** Bundle offers available — please contact us for details.<br />
             *** No upfront and limited upfront payment deals available — please contact us for details.
           </p>
-        </div>
-      </section>
-
-      {/* COMPARISON SECTION */}
-      <section id="comparison" className="py-24 relative">
-        <div className="container px-4 mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Comparison</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              Both technologies run on the same RFID readers, app, and integration model — allowing mixed deployments without added operational complexity.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* UHF Column */}
-            <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-blue-500 hover:border-blue-400 transition-colors">
-              <h3 className="text-2xl font-bold mb-2">Passive UHF</h3>
-              <p className="text-sm text-blue-400 font-mono mb-6">Mass Participation Running & Cycling</p>
-              
-              <ul className="space-y-4">
-                {[
-                  "Low tag cost and high throughput",
-                  "Disposable tags sourced from any supplier",
-                  "Unlocked — use standard EPC Gen2 UHF tags",
-                  "Validated UHF bib tags also available",
-                  "Open software protocols (LLRP, IPICO)"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Active Column */}
-            <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-purple-500 hover:border-purple-400 transition-colors relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 blur-2xl rounded-full" />
-              
-              <h3 className="text-2xl font-bold mb-2">Active HF</h3>
-              <p className="text-sm text-purple-400 font-mono mb-6">Higher Accuracy & Environmental Robustness</p>
-              
-              <ul className="space-y-4">
-                {[
-                  "Performs reliably through water, mud, and dense athlete packs",
-                  "Reusable waterproof shoe and multisport tags",
-                  "Designed for extreme environments",
-                  "Multi-year tag reuse",
-                  "Ideal for triathlon, swimming, and obstacle events",
-                  "Proven industry-lowest carbon footprint"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
-                    <span className="text-gray-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SPECS SECTION */}
-      <section id="specs" className="py-24 bg-white/5">
-        <div className="container px-4 mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Reader — Key Specs</h2>
-            <p className="text-muted-foreground">Professional RFID chip reader, passive UHF or active HF</p>
-          </div>
-          <div className="flex flex-col gap-16 max-w-4xl mx-auto">
-            <div>
-              <div className="space-y-6">
-                {[
-                  { label: "Reader Size", value: "3.8 × 7.3 × 4.1 inches" },
-                  { label: "Reader Mass", value: "4.75 lb (1.7 kg)" },
-                  { label: "IP Rating", value: "IP68 waterproof" },
-                  { label: "Battery Life", value: "Up to 10 hours (UHF) / 72 hours (HF)" },
-                  { label: "Operation", value: "Single-button with LED and buzzer indicators" },
-                  { label: "Connectivity", value: "Global SIM, LoRa up to 10 km, Wi-Fi, Dual PoE" },
-                  { label: "Updates", value: "Over-the-air firmware and configuration" },
-                  { label: "Software Integration", value: "LLRP and legacy formats including IPICO" },
-                  { label: "Compatibility", value: "Works with any timing software" },
-                  { label: "UHF Tags", value: "Unlocked — use any supplier, or use ours" },
-                  { label: "HF Tags", value: "Reusable waterproof multi-year active shoe-tags and multi-sport tags" },
-                ].map((spec, i) => (
-                  <div key={i} className="flex justify-between items-center py-4 border-b border-white/10">
-                    <span className="text-muted-foreground">{spec.label}</span>
-                    <span className="font-bold text-white text-right">{spec.value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden tech-border">
-              {/* Lock Image Background */}
-              <img src={lockImage} alt="Open System" className="absolute inset-0 w-full h-full object-cover" />
-              <div className="absolute inset-0 bg-black/40" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8 backdrop-blur-sm bg-black/30 rounded-xl border border-white/10">
-                  <div className="text-5xl font-bold text-white mb-2">Open System</div>
-                  <div className="text-xl text-blue-300 uppercase tracking-widest">No Proprietary Lock-In</div>
-                  <div className="text-sm text-muted-foreground mt-2">Compatible with any timing software</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

@@ -6,11 +6,11 @@ import logoImg from "@assets/Gemini_Generated_Image_23s0vk23s0vk23s0_17688710093
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
+  { label: "Comparison", href: "/#comparison" },
   { label: "Products", href: "/#products" },
+  { label: "Specs", href: "/#specs" },
   { label: "Mobile App", href: "/#app" },
   { label: "Prices", href: "/#prices" },
-  { label: "Comparison", href: "/#comparison" },
-  { label: "Specs", href: "/#specs" },
   { label: "Contact", href: "/#contact" },
 ];
 
