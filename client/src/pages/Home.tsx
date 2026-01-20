@@ -495,6 +495,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHY INVEST SECTION */}
+      <section id="why-invest" className="py-24 relative">
+        <div className="container px-4 mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Why You Should Invest in Us</h2>
+          </div>
+          
+          <div className="glass-panel p-8 md:p-12 rounded-2xl">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+              Open system architecture with no proprietary lock-in, supporting any timing software, any cloud ingestion endpoint, and standard EPC Gen2 UHF tags, preserving buyer leverage and avoiding forced ecosystem migration.
+            </p>
+            
+            <div className="space-y-6 text-muted-foreground">
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Dual-technology support on a single platform, passive UHF and active HF running on the same readers, mats, app, and integration model, enabling mixed deployments without added operational complexity.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Commodity-priced consumables, with UHF tags available from any supplier at market pricing, directly reducing per-event operating cost and eliminating inflated transponder margins.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Hardware engineered for harsh environments, with active HF systems designed to perform reliably through water, mud, dense athlete packs, and extreme conditions such as triathlon, swimming, and obstacle racing.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Reusable active HF tags with multi-year lifespan, lowering lifetime cost, waste, and logistics overhead compared to disposable or semi-proprietary alternatives.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Professional-grade reader specifications, including IP68 waterproofing, battery operation, single-button field usability, long battery life, and over-the-air firmware and configuration updates.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Open integration protocols, including LLRP and legacy formats such as IPICO, allowing drop-in replacement of existing infrastructure without rewriting software pipelines.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Rapid deployment hardware, including fold-up and roll-up mats for UHF and HF, lightweight and configurable across road, grass, trail, and wet environments.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Explicit positioning against app-based timing and aging DIY systems, providing a clear upgrade path to professional RFID timing without forcing a full software stack replacement.</span>
+              </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Transparent hardware pricing and published specifications, enabling clear cost comparison and procurement planning without opaque bundle or ecosystem pricing.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT SECTION */}
       <section id="contact" className="py-24 relative">
         <div className="container px-4 mx-auto max-w-4xl">
