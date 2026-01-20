@@ -549,6 +549,10 @@ export default function Home() {
                 <span className="text-primary">•</span>
                 <span>Smallest, most lightweight readers in the industry — making your day easier.</span>
               </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>We enable and have proven remote timing with minimal or no onsite labor.</span>
+              </p>
             </div>
           </div>
         </div>
