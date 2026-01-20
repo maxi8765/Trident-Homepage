@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoImg from "@assets/logo-removebg-preview_1768867815888.png";
+import logoImg from "@assets/ChatGPT_Image_Jan_20,_2026,_10_16_10_AM_1768868203744.png";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
@@ -43,13 +43,13 @@ export function Navigation() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-32">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
             <img 
               src={logoImg} 
               alt="Trident Powered by ONETIME" 
-              className="h-20 w-auto object-contain"
+              className="h-28 w-auto object-contain"
             />
           </Link>
 
