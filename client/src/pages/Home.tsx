@@ -242,6 +242,90 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MOBILE APP SECTION */}
+      <section id="app" className="py-24 relative overflow-hidden">
+        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+        
+        <div className="container px-4 mx-auto">
+          <div className="flex flex-col gap-16 items-center max-w-4xl mx-auto">
+            <motion.div
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+            >
+              <motion.div variants={fadeIn} className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold">
+                <Smartphone className="w-4 h-4" />
+                Browser-Based PWA
+              </motion.div>
+              
+              <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
+                Mobile <span className="text-primary">App</span>
+              </motion.h2>
+              <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Trident is managed through a browser-based progressive web app on your mobile phone. No local software required. 
+                Connects via Reader STA WiFi. Configure RFID readers, monitor status, manage connectivity, 
+                apply firmware updates, and route data. Provides redundant data backup locally and to any cloud storage. 
+                Operators select their preferred timing software and data ingestion endpoint during setup.
+              </motion.p>
+              
+              <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {[
+                  { icon: Settings, title: "Configure Readers", desc: "Set up and manage every reader" },
+                  { icon: Activity, title: "Monitor Status", desc: "Real-time status and telemetry" },
+                  { icon: Cloud, title: "Route Data", desc: "Choose your timing software endpoint" },
+                  { icon: Wifi, title: "Manage Reader Connectivity", desc: "SIM, LoRa, Wi-Fi, PoE options" },
+                ].map((feature, i) => (
+                  <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
+                    <feature.icon className="w-8 h-8 text-primary shrink-0" />
+                    <div>
+                      <h4 className="font-bold text-white mb-1">{feature.title}</h4>
+                      <p className="text-sm text-muted-foreground">{feature.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative flex justify-center items-center gap-4"
+            >
+              <div className="relative -rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-[180px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
+                  <img 
+                    src={appScreen1}
+                    alt="Reader Status Screen" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="relative z-10 scale-110">
+                <div className="w-[200px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
+                  <img 
+                    src={appScreen2}
+                    alt="Reader Configuration Screen" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="relative rotate-3 hover:rotate-0 transition-transform duration-500">
+                <div className="w-[180px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
+                  <img 
+                    src={appScreen3}
+                    alt="Reader Commands Screen" 
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICES SECTION */}
       <section id="prices" className="py-24 relative">
         <div className="container px-4 mx-auto">
@@ -402,90 +486,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MOBILE APP SECTION */}
-      <section id="app" className="py-24 relative overflow-hidden">
-        <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-        
-        <div className="container px-4 mx-auto">
-          <div className="flex flex-col gap-16 items-center max-w-4xl mx-auto">
-            <motion.div
-              initial="initial"
-              whileInView="animate"
-              viewport={{ once: true }}
-              variants={staggerContainer}
-            >
-              <motion.div variants={fadeIn} className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold">
-                <Smartphone className="w-4 h-4" />
-                Browser-Based PWA
-              </motion.div>
-              
-              <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Mobile <span className="text-primary">App</span>
-              </motion.h2>
-              <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Trident is managed through a browser-based progressive web app on your mobile phone. No local software required. 
-                Connects via Reader STA WiFi. Configure RFID readers, monitor status, manage connectivity, 
-                apply firmware updates, and route data. Provides redundant data backup locally and to any cloud storage. 
-                Operators select their preferred timing software and data ingestion endpoint during setup.
-              </motion.p>
-              
-              <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {[
-                  { icon: Settings, title: "Configure Readers", desc: "Set up and manage every reader" },
-                  { icon: Activity, title: "Monitor Status", desc: "Real-time status and telemetry" },
-                  { icon: Cloud, title: "Route Data", desc: "Choose your timing software endpoint" },
-                  { icon: Wifi, title: "Manage Reader Connectivity", desc: "SIM, LoRa, Wi-Fi, PoE options" },
-                ].map((feature, i) => (
-                  <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
-                    <feature.icon className="w-8 h-8 text-primary shrink-0" />
-                    <div>
-                      <h4 className="font-bold text-white mb-1">{feature.title}</h4>
-                      <p className="text-sm text-muted-foreground">{feature.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="relative flex justify-center items-center gap-4"
-            >
-              <div className="relative -rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="w-[180px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
-                  <img 
-                    src={appScreen1}
-                    alt="Reader Status Screen" 
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-              <div className="relative z-10 scale-110">
-                <div className="w-[200px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
-                  <img 
-                    src={appScreen2}
-                    alt="Reader Configuration Screen" 
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-              <div className="relative rotate-3 hover:rotate-0 transition-transform duration-500">
-                <div className="w-[180px] rounded-3xl overflow-hidden border-4 border-gray-800 shadow-2xl bg-gray-900">
-                  <img 
-                    src={appScreen3}
-                    alt="Reader Commands Screen" 
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
