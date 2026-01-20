@@ -39,7 +39,7 @@ export default function Home() {
       <Navigation />
 
       {/* HERO SECTION */}
-      <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden pt-24 md:pt-0">
         {/* White to Black Gradient Bleed from Header */}
         <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-white via-white/50 to-transparent z-5 pointer-events-none" />
         
