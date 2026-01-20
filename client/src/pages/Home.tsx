@@ -136,10 +136,11 @@ export default function Home() {
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-4 leading-relaxed">
                 Trident readers are professional RFID chip readers designed for endurance event timing.
               </motion.p>
+              <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                Best-in-class accuracy and precision specifications, engineered to minimise RF interference, missed reads, packet loss, and timing gaps under highest throughput and adverse conditions.
+              </motion.p>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Best-in-class accuracy and precision specifications, engineered to minimise RF interference, missed reads, packet loss, and timing gaps under highest throughput and adverse conditions. 
-                The platform is built as an open system — you bring your own timing software and UHF tags if you want. 
-                No proprietary lock-in. The system reduces labour, lowers operational risk, and scales from small events to mass participation.
+                The platform is built as an open system — you bring your own timing software and UHF tags if you want. No proprietary lock-in. The system reduces labour, lowers operational risk, and scales from small events to mass participation.
               </motion.p>
               <motion.p variants={fadeIn} className="text-md text-muted-foreground mb-8 leading-relaxed">
                 Trident has supplied RFID timing equipment to professional timers since 2016 for mass participation events worldwide, 
