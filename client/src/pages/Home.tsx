@@ -121,7 +121,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -translate-y-1/2 -translate-x-1/2 pointer-events-none" />
         
         <div className="container px-4 mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col gap-16 items-center max-w-4xl mx-auto">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -306,7 +306,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Reader — Key Specs</h2>
             <p className="text-muted-foreground">Professional RFID chip reader, passive UHF or active HF</p>
           </div>
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="flex flex-col gap-16 max-w-4xl mx-auto">
             <div>
               <div className="space-y-6">
                 {[
@@ -349,7 +349,7 @@ export default function Home() {
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
         
         <div className="container px-4 mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col gap-16 items-center max-w-4xl mx-auto">
             <motion.div
               initial="initial"
               whileInView="animate"
