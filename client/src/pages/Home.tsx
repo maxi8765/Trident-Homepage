@@ -4,7 +4,8 @@ import { Navigation } from "@/components/Navigation";
 import { ProductCard } from "@/components/ProductCard";
 import { ContactForm } from "@/components/ContactForm";
 import { useProducts } from "@/hooks/use-products";
-import bannerImg from "@assets/Banner_Design_JPG_1768867149952.jpg";
+import heroBg from "@assets/slide_2_1768867480432.png";
+import productShot from "@assets/slide_1_1768867480431.png";
 
 // Animation variants
 const fadeIn = {
@@ -37,10 +38,10 @@ export default function Home() {
       <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-background/80 z-10" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent z-10" />
+          <div className="absolute inset-0 bg-background/60 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent z-10" />
           <img 
-            src={bannerImg} 
+            src={heroBg} 
             alt="Trident Timing Hardware" 
             className="w-full h-full object-cover object-center"
           />
@@ -155,11 +156,11 @@ export default function Home() {
               className="relative"
             >
               <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
-                {/* Stock image representing precision tech */}
+                {/* Product Shot */}
                 <img 
-                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80" 
-                  alt="High Tech Circuit" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  src={productShot}
+                  alt="Trident Reader" 
+                  className="w-full h-full object-contain bg-gradient-to-b from-gray-900 to-black p-4 group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 <div className="absolute bottom-8 left-8 right-8">

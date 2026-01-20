@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Activity } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoImg from "@assets/logo_1768867394387.png";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
@@ -45,12 +46,11 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-            <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-blue-600 shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform duration-300">
-              <Activity className="w-6 h-6 text-white" />
-            </div>
-            <span className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
-              TRIDENT
-            </span>
+            <img 
+              src={logoImg} 
+              alt="Trident Powered by ONETIME" 
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}
