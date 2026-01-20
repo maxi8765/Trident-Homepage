@@ -143,10 +143,10 @@ export default function Home() {
               
               <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { icon: Radio, title: "Open Integration", desc: "Works with any timing software using LLRP and legacy formats including IPICO" },
-                  { icon: Settings, title: "Single Button Operation", desc: "IP68 waterproof with LED and buzzer feedback" },
-                  { icon: Cloud, title: "OTA Updates", desc: "Firmware and configuration updates delivered over the air" },
-                  { icon: Battery, title: "Long Battery Life", desc: "Up to 10 hours UHF / 72 hours HF operation" },
+                  { icon: Activity, title: "Timing Mastery", desc: "Passive UHF, active HF waterproof (IP-68), webapp management, and monitoring." },
+                  { icon: Settings, title: "Equipment Empowerment", desc: "Simplify complex tasks, amplify productivity, unlock you buying freedom." },
+                  { icon: Battery, title: "Revenue & Profit Amplification", desc: "Supercharge your revenue, invest less capital, reduce operating costs." },
+                  { icon: Cloud, title: "White Labelling", desc: "Elevate your brand, elevate your customers brand." },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                     <feature.icon className="w-8 h-8 text-primary shrink-0" />
