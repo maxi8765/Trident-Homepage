@@ -346,7 +346,8 @@ export default function Home() {
                   "Reusable waterproof shoe and multisport tags",
                   "Designed for extreme environments",
                   "Multi-year tag reuse",
-                  "Ideal for triathlon, swimming, and obstacle events"
+                  "Ideal for triathlon, swimming, and obstacle events",
+                  "Proven industry-lowest carbon footprint"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
