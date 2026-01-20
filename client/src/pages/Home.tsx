@@ -61,28 +61,29 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="inline-block mb-4 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold tracking-wider uppercase backdrop-blur-md"
           >
-            Introducing Trident V2
+            Professional RFID Timing
           </motion.div>
           
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-blue-300 drop-shadow-2xl"
+            className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-blue-100 to-blue-300 drop-shadow-2xl"
           >
-            MAKE TIMING <br />
-            <span className="text-primary glow-text">GREAT AGAIN</span>
+            Ready to <span className="text-primary glow-text">Scale Up?</span>
           </motion.h1>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto space-y-2"
           >
-            Invest In Trident V2 Hardware. 
-            Make timing the easiest part of your day.
-          </motion.p>
+            <p>Has your app-timed event grown too big?</p>
+            <p>Is your DIY equipment too complicated and limiting your growth?</p>
+            <p>Is your timing equipment nearing end of life?</p>
+            <p className="text-white font-semibold pt-2">Add capacity, time more events, and grow revenue.</p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -128,20 +129,24 @@ export default function Home() {
               variants={staggerContainer}
             >
               <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Making Timing The <span className="text-primary">Easiest Part</span> Of Your Day
+                Professional Timing, <span className="text-primary">Open System</span>
               </motion.h2>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Since 2016, Trident has provided premier professional RFID timing solutions for mass participation 
-                endurance events worldwide. Our equipment delivers precise, reliable timing with minimal labor costs 
-                and timing errors.
+                Trident readers are professional RFID chip readers designed for endurance event timing. 
+                The platform is built as an open system — you bring your own timing software and UHF tags if you want. 
+                No proprietary lock-in. The system reduces labour, lowers operational risk, and scales from small events to mass participation.
+              </motion.p>
+              <motion.p variants={fadeIn} className="text-md text-muted-foreground mb-8 leading-relaxed">
+                Trident has supplied RFID timing equipment to professional timers since 2016 for mass participation events worldwide, 
+                delivering reliable, accurate, and precise timing with reduced labour requirements and fewer timing errors.
               </motion.p>
               
               <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { icon: Activity, title: "Timing Mastery", desc: "Passive UHF, active HF waterproof (IP-68), webapp management & monitoring" },
-                  { icon: Settings, title: "Equipment Empowerment", desc: "Simplify complex tasks, amplify productivity, unlock buying freedom" },
-                  { icon: Cloud, title: "White Labelling", desc: "Elevate your brand, elevate your customers' brand" },
-                  { icon: Battery, title: "Revenue & Profit Amplification", desc: "Invest less capital, reduce operating costs" },
+                  { icon: Radio, title: "Open Integration", desc: "Works with any timing software using LLRP and legacy formats including IPICO" },
+                  { icon: Settings, title: "Single Button Operation", desc: "IP68 waterproof with LED and buzzer feedback" },
+                  { icon: Cloud, title: "OTA Updates", desc: "Firmware and configuration updates delivered over the air" },
+                  { icon: Battery, title: "Long Battery Life", desc: "Up to 10 hours UHF / 72 hours HF operation" },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                     <feature.icon className="w-8 h-8 text-primary shrink-0" />
@@ -178,9 +183,9 @@ export default function Home() {
       <section id="products" className="py-24 bg-black/20">
         <div className="container px-4 mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Trident Hardware</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Products</h2>
             <p className="text-lg text-muted-foreground">
-              A complete ecosystem of readers, mats, and tags designed for professional timers.
+              RFID chip readers, mats, UHF tags, and reusable active HF tags — all without proprietary lock-in.
             </p>
           </div>
 
@@ -192,10 +197,11 @@ export default function Home() {
             <div className="space-y-20">
               {/* Readers */}
               <div>
-                <h3 className="text-2xl font-bold mb-8 flex items-center gap-2 text-white/90">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-white/90">
                   <span className="w-8 h-1 bg-primary rounded-full"></span>
-                  Timing Systems
+                  RFID Chip Readers
                 </h3>
+                <p className="text-muted-foreground mb-8 ml-10">Available in passive UHF and active HF models. 3.8 × 7.3 × 4.1 inches, 4.75 lb. IP68 waterproof, battery powered, single-button operation.</p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {readers.map((product, i) => (
                     <ProductCard key={product.id} product={product} index={i} />
@@ -205,10 +211,11 @@ export default function Home() {
 
               {/* Mats */}
               <div>
-                <h3 className="text-2xl font-bold mb-8 flex items-center gap-2 text-white/90">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-white/90">
                   <span className="w-8 h-1 bg-secondary rounded-full"></span>
-                  Antenna Mats
+                  Mats and Antennas
                 </h3>
+                <p className="text-muted-foreground mb-8 ml-10">Fold-up and roll-up UHF mats for rapid deployment. Roll-up active HF mats for triathlon, swimming, and wet conditions. Lightweight, non-slip, configurable for road, grass, or trail.</p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {mats.map((product, i) => (
                     <ProductCard key={product.id} product={product} index={i} />
@@ -218,10 +225,11 @@ export default function Home() {
 
               {/* Tags */}
               <div>
-                <h3 className="text-2xl font-bold mb-8 flex items-center gap-2 text-white/90">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-white/90">
                   <span className="w-8 h-1 bg-accent rounded-full"></span>
-                  Tags & Accessories
+                  Tags
                 </h3>
+                <p className="text-muted-foreground mb-8 ml-10">UHF systems are unlocked — use standard EPC Gen2 tags from any supplier. Active HF systems use reusable waterproof shoe and multisport tags designed for extreme environments and multi-year reuse.</p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {tags.map((product, i) => (
                     <ProductCard key={product.id} product={product} index={i} />
@@ -237,22 +245,24 @@ export default function Home() {
       <section id="comparison" className="py-24 relative">
         <div className="container px-4 mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Technology Comparison</h2>
-            <p className="text-muted-foreground">Understanding the difference between Active and UHF technology.</p>
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Comparison</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              Both technologies run on the same RFID readers, app, and integration model — allowing mixed deployments without added operational complexity.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* UHF Column */}
             <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-blue-500 hover:border-blue-400 transition-colors">
               <h3 className="text-2xl font-bold mb-2">Passive UHF</h3>
-              <p className="text-sm text-blue-400 font-mono mb-6">Mass Participation Running/Cycling</p>
+              <p className="text-sm text-blue-400 font-mono mb-6">Mass Participation Running & Cycling</p>
               
               <ul className="space-y-4">
                 {[
-                  "Unlocked - use any supplier tags/bibs",
-                  "Validated tags/bibs also available",
-                  "Best for mass participation events",
-                  "6 sigma reliability detection",
+                  "Low tag cost and high throughput",
+                  "Disposable tags sourced from any supplier",
+                  "Unlocked — use standard EPC Gen2 UHF tags",
+                  "Validated UHF bib tags also available",
                   "Open software protocols (LLRP, IPICO)"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -268,15 +278,15 @@ export default function Home() {
               <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 blur-2xl rounded-full" />
               
               <h3 className="text-2xl font-bold mb-2">Active HF</h3>
-              <p className="text-sm text-purple-400 font-mono mb-6">Extreme Events - Triathlon, MTB, Swimming</p>
+              <p className="text-sm text-purple-400 font-mono mb-6">Higher Accuracy & Environmental Robustness</p>
               
               <ul className="space-y-4">
                 {[
-                  "Reusable 10 year tags (shoe & multi-sport)",
-                  "QR coded for self check-in",
-                  "Works through water & mud",
-                  "Green tag reuse option - lowest carbon footprint",
-                  "University research validated sustainability"
+                  "Performs reliably through water, mud, and dense athlete packs",
+                  "Reusable waterproof shoe and multisport tags",
+                  "Designed for extreme environments",
+                  "Multi-year tag reuse",
+                  "Ideal for triathlon, swimming, and obstacle events"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
@@ -292,18 +302,25 @@ export default function Home() {
       {/* SPECS SECTION */}
       <section id="specs" className="py-24 bg-white/5">
         <div className="container px-4 mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Reader — Key Specs</h2>
+            <p className="text-muted-foreground">Professional RFID chip reader, passive UHF or active HF</p>
+          </div>
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl font-display font-bold mb-8">Technical Specifications</h2>
               <div className="space-y-6">
                 {[
-                  { label: "Dimensions", value: "3.8 x 7.3 x 4.1 inches (9.5 x 18.5 x 10.5cm)" },
-                  { label: "Weight", value: "Only 4.75 pounds (1.7 kg)" },
-                  { label: "IP Rating", value: "IP68 Waterproof, single button operation" },
-                  { label: "Battery Life", value: "10 hrs (UHF) / 72 hrs (HF)" },
-                  { label: "Connectivity", value: "Global SIM, LoRa (10km), Wi-Fi, Dual POE" },
-                  { label: "Updates", value: "OTA firmware updates" },
+                  { label: "Reader Size", value: "3.8 × 7.3 × 4.1 inches" },
+                  { label: "Reader Mass", value: "4.75 lb (1.7 kg)" },
+                  { label: "IP Rating", value: "IP68 waterproof" },
+                  { label: "Battery Life", value: "Up to 10 hours (UHF) / 72 hours (HF)" },
+                  { label: "Operation", value: "Single-button with LED and buzzer indicators" },
+                  { label: "Connectivity", value: "Global SIM, LoRa up to 10 km, Wi-Fi, Dual PoE" },
+                  { label: "Updates", value: "Over-the-air firmware and configuration" },
+                  { label: "Integration", value: "LLRP and legacy formats including IPICO" },
                   { label: "Compatibility", value: "Works with any timing software" },
+                  { label: "UHF Tags", value: "Unlocked — use any supplier" },
+                  { label: "HF Tags", value: "Reusable waterproof active tags" },
                 ].map((spec, i) => (
                   <div key={i} className="flex justify-between items-center py-4 border-b border-white/10">
                     <span className="text-muted-foreground">{spec.label}</span>
@@ -315,11 +332,10 @@ export default function Home() {
             <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden tech-border">
               {/* Abstract Tech Background */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50" />
-              <div className="absolute inset-0 bg-[url('https://pixabay.com/get/g36e26b729afbda4341e787666882dac0eb053391cf7e6c8442ebc3e678db1ae1d261248774c37bcf47eb037da219ed62fd9cac45a2f5cee26c915e54c7e1bf0e_1280.jpg')] bg-cover bg-center mix-blend-overlay opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8 backdrop-blur-sm bg-black/30 rounded-xl border border-white/10">
                   <div className="text-5xl font-bold text-white mb-2">Open System</div>
-                  <div className="text-xl text-blue-300 uppercase tracking-widest">No Ongoing Lock-In</div>
+                  <div className="text-xl text-blue-300 uppercase tracking-widest">No Proprietary Lock-In</div>
                   <div className="text-sm text-muted-foreground mt-2">Compatible with any timing software</div>
                 </div>
               </div>
@@ -342,23 +358,27 @@ export default function Home() {
             >
               <motion.div variants={fadeIn} className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-semibold">
                 <Smartphone className="w-4 h-4" />
-                PWA Mobile App
+                Browser-Based PWA
               </motion.div>
               
               <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Onetime Reader <span className="text-primary">Manager</span>
+                Mobile <span className="text-primary">App</span>
               </motion.h2>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Manage all your Trident readers from a single mobile app. Connect via STA WiFi or LoRaWAN mesh 
-                network to configure, monitor, and backup data from every reader in your race - all from your phone.
+                Trident is managed through a browser-based progressive web app. No local software required. 
+                Configure RFID readers, monitor status, manage connectivity, apply firmware updates, and route data. 
+                Operators select their preferred timing software and data ingestion endpoint during setup.
+              </motion.p>
+              <motion.p variants={fadeIn} className="text-md text-muted-foreground mb-8 leading-relaxed">
+                Real-time timing data and telemetry are forwarded using open, documented protocols.
               </motion.p>
               
               <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { icon: Wifi, title: "STA WiFi & LoRaWAN", desc: "Multiple connectivity options" },
-                  { icon: Settings, title: "Full Configuration", desc: "Configure every reader setting" },
-                  { icon: Activity, title: "Live Telemetry", desc: "Real-time battery, temp & status" },
-                  { icon: Shield, title: "Data Backup", desc: "Secure cloud & local backup" },
+                  { icon: Settings, title: "Configure Readers", desc: "Set up and manage every reader" },
+                  { icon: Activity, title: "Monitor Status", desc: "Real-time status and telemetry" },
+                  { icon: Cloud, title: "Route Data", desc: "Choose your timing software endpoint" },
+                  { icon: Wifi, title: "Manage Connectivity", desc: "SIM, LoRa, Wi-Fi, PoE options" },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                     <feature.icon className="w-8 h-8 text-primary shrink-0" />
