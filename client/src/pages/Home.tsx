@@ -250,7 +250,7 @@ export default function Home() {
             <p className="text-muted-foreground">Full pricing for our 2025 hardware lineup</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
             {/* Active HF Column */}
             <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-purple-500">
               <h3 className="text-2xl font-bold mb-6 text-purple-400">Active HF</h3>
@@ -292,6 +292,10 @@ export default function Home() {
               </div>
             </div>
           </div>
+          
+          <p className="text-center text-muted-foreground text-sm max-w-5xl mx-auto">
+            * Other mat sizes available. Personalization of mats — request a quote.
+          </p>
         </div>
       </section>
 
