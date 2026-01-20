@@ -46,18 +46,18 @@ export function Navigation() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
             <img 
               src={logoImg} 
               alt="Trident Powered by ONETIME" 
-              className="h-28 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-5">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.label}
@@ -66,14 +66,14 @@ export function Navigation() {
                   e.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className="text-sm font-medium text-gray-600 hover:text-primary transition-colors uppercase tracking-wider"
+                className="text-xs font-medium text-gray-600 hover:text-primary transition-colors uppercase tracking-wider"
               >
                 {item.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="px-6 py-2 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-purple-500 transition-colors shadow-lg shadow-primary/25"
+              className="px-4 py-1.5 rounded-full bg-primary text-primary-foreground text-sm font-semibold hover:bg-purple-500 transition-colors shadow-lg shadow-primary/25"
             >
               Get Quote
             </a>
