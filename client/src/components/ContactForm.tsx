@@ -24,7 +24,7 @@ export function ContactForm() {
     // Open email client with pre-filled message
     const subject = encodeURIComponent(`Trident Inquiry from ${data.name}`);
     const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`);
-    window.location.href = `mailto:lhicks@tridentsportstech.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:lhicks@tridentsportstech.com?cc=philip@onetime.sport&subject=${subject}&body=${body}`;
     
     // Also save to database
     mutate(data, {
