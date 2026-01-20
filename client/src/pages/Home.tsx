@@ -319,7 +319,7 @@ export default function Home() {
                   { label: "Updates", value: "Over-the-air firmware and configuration" },
                   { label: "Integration", value: "LLRP and legacy formats including IPICO" },
                   { label: "Compatibility", value: "Works with any timing software" },
-                  { label: "UHF Tags", value: "Unlocked — use any supplier" },
+                  { label: "UHF Tags", value: "Unlocked — use any supplier, or use ours" },
                   { label: "HF Tags", value: "Reusable waterproof multi-year active shoe-tags and multi-sport tags" },
                 ].map((spec, i) => (
                   <div key={i} className="flex justify-between items-center py-4 border-b border-white/10">
