@@ -229,7 +229,7 @@ export default function Home() {
                   <span className="w-8 h-1 bg-accent rounded-full"></span>
                   Tags
                 </h3>
-                <p className="text-muted-foreground mb-8 ml-10">UHF systems are unlocked — use standard EPC Gen2 tags from any supplier. Active HF systems use reusable waterproof shoe and multisport tags designed for extreme environments and multi-year reuse.</p>
+                <p className="text-muted-foreground mb-8 ml-10">UHF systems are unlocked — use standard EPC Gen2 tags from any supplier. Or use ours. Active HF systems use reusable waterproof shoe and multisport tags designed for extreme environments and multi-year reuse.</p>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {tags.map((product, i) => (
                     <ProductCard key={product.id} product={product} index={i} />
