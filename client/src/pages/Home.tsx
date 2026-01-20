@@ -83,6 +83,7 @@ export default function Home() {
             <p>Has your app-timed event grown too big?</p>
             <p>Is your DIY equipment too complicated and limiting your growth?</p>
             <p>Is your timing equipment nearing end of life?</p>
+            <p>Tired of paying 6x market prices for tags?</p>
             <p className="text-white font-semibold pt-2">Add capacity, time more events, and grow revenue.</p>
           </motion.div>
 
