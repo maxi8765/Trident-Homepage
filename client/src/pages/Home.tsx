@@ -317,7 +317,7 @@ export default function Home() {
                   { label: "Operation", value: "Single-button with LED and buzzer indicators" },
                   { label: "Connectivity", value: "Global SIM, LoRa up to 10 km, Wi-Fi, Dual PoE" },
                   { label: "Updates", value: "Over-the-air firmware and configuration" },
-                  { label: "Integration", value: "LLRP and legacy formats including IPICO" },
+                  { label: "Software Integration", value: "LLRP and legacy formats including IPICO" },
                   { label: "Compatibility", value: "Works with any timing software" },
                   { label: "UHF Tags", value: "Unlocked — use any supplier, or use ours" },
                   { label: "HF Tags", value: "Reusable waterproof multi-year active shoe-tags and multi-sport tags" },
