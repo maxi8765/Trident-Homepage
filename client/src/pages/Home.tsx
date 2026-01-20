@@ -77,8 +77,8 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto"
           >
-            Invest in the next generation of precision timing hardware. 
-            Built for reliability, designed for speed.
+            Invest in the next generation RFID chip timing. 
+            An open system built for reliability, designed for speed.
           </motion.p>
 
           <motion.div
