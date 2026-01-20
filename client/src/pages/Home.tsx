@@ -9,6 +9,7 @@ import productShot from "@assets/slide_8_1768871636055.png";
 import appScreen1 from "@assets/Screenshot_2026-01-20-10-17-42-30_40deb401b9ffe8e1df2f1cc5ba48_1768869177745.jpg";
 import appScreen2 from "@assets/Screenshot_2026-01-20-10-17-45-01_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
 import appScreen3 from "@assets/Screenshot_2026-01-20-10-17-47-77_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
+import lockImage from "@assets/lock_1768874148272.jpg";
 
 // Animation variants
 const fadeIn = {
@@ -330,8 +331,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden tech-border">
-              {/* Abstract Tech Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50" />
+              {/* Lock Image Background */}
+              <img src={lockImage} alt="Open System" className="absolute inset-0 w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/40" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8 backdrop-blur-sm bg-black/30 rounded-xl border border-white/10">
                   <div className="text-5xl font-bold text-white mb-2">Open System</div>
