@@ -378,7 +378,7 @@ export default function Home() {
                   { icon: Settings, title: "Configure Readers", desc: "Set up and manage every reader" },
                   { icon: Activity, title: "Monitor Status", desc: "Real-time status and telemetry" },
                   { icon: Cloud, title: "Route Data", desc: "Choose your timing software endpoint" },
-                  { icon: Wifi, title: "Manage Connectivity", desc: "SIM, LoRa, Wi-Fi, PoE options" },
+                  { icon: Wifi, title: "Manage Reader Connectivity", desc: "SIM, LoRa, Wi-Fi, PoE options" },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                     <feature.icon className="w-8 h-8 text-primary shrink-0" />
