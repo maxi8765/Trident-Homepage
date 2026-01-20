@@ -5,7 +5,7 @@ import { ProductCard } from "@/components/ProductCard";
 import { ContactForm } from "@/components/ContactForm";
 import { useProducts } from "@/hooks/use-products";
 import heroBg from "@assets/marathon-250987_1920_1768869334542.jpg";
-import productShot from "@assets/slide_1_1768867480431.png";
+import productShot from "@assets/slide_8_1768871636055.png";
 import appScreen1 from "@assets/Screenshot_2026-01-20-10-17-42-30_40deb401b9ffe8e1df2f1cc5ba48_1768869177745.jpg";
 import appScreen2 from "@assets/Screenshot_2026-01-20-10-17-45-01_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
 import appScreen3 from "@assets/Screenshot_2026-01-20-10-17-47-77_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
@@ -161,18 +161,13 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="aspect-square rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
+              <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl relative group">
                 {/* Product Shot */}
                 <img 
                   src={productShot}
                   alt="Trident Reader" 
-                  className="w-full h-full object-contain bg-gradient-to-b from-gray-100 to-gray-300 p-4 group-hover:scale-105 transition-transform duration-700 brightness-110"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
-                <div className="absolute bottom-8 left-8 right-8">
-                  <div className="text-2xl font-bold font-display mb-2">Engineered for Extremes</div>
-                  <div className="text-muted-foreground">IP68 Rated Waterproof & Dustproof Enclosures</div>
-                </div>
               </div>
             </motion.div>
           </div>
