@@ -295,7 +295,8 @@ export default function Home() {
           
           <p className="text-center text-muted-foreground text-sm max-w-5xl mx-auto">
             * Other mat sizes available. Personalization of mats — request a quote.<br />
-            ** Bundle offers available — please contact us for details.
+            ** Bundle offers available — please contact us for details.<br />
+            *** No upfront and limited upfront payment deals available — please contact us for details.
           </p>
         </div>
       </section>
