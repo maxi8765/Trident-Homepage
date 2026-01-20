@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoImg from "@assets/trident_powered_by_onetime_logo_1768870135058.png";
+import logoImg from "@assets/Gemini_Generated_Image_23s0vk23s0vk23s0_1768871009364.png";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
@@ -39,8 +39,8 @@ export function Navigation() {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-transparent",
-        scrolled ? "bg-background/80 backdrop-blur-lg border-white/10 shadow-lg" : "bg-transparent"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b",
+        scrolled ? "bg-white shadow-lg border-gray-200" : "bg-white border-gray-100"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,7 +64,7 @@ export function Navigation() {
                   e.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors uppercase tracking-wider"
+                className="text-sm font-medium text-gray-600 hover:text-primary transition-colors uppercase tracking-wider"
               >
                 {item.label}
               </a>
@@ -80,7 +80,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-muted-foreground hover:text-foreground"
+            className="md:hidden p-2 text-gray-600 hover:text-gray-900"
           >
             {isOpen ? <X /> : <Menu />}
           </button>
@@ -89,7 +89,7 @@ export function Navigation() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-white/10 animate-in slide-in-from-top-5">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 animate-in slide-in-from-top-5">
           <div className="flex flex-col p-4 gap-4">
             {NAV_ITEMS.map((item) => (
               <a
@@ -99,7 +99,7 @@ export function Navigation() {
                   e.preventDefault();
                   handleNavClick(item.href);
                 }}
-                className="text-lg font-medium text-foreground py-2 border-b border-white/5"
+                className="text-lg font-medium text-gray-800 py-2 border-b border-gray-100"
               >
                 {item.label}
               </a>

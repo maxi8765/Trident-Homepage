@@ -39,6 +39,9 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
+        {/* White to Black Gradient Bleed from Header */}
+        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-white via-white/50 to-transparent z-5 pointer-events-none" />
+        
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-background/60 z-10" />
