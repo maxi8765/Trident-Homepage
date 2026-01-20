@@ -431,7 +431,7 @@ export default function Home() {
               <span className="font-display font-bold text-xl">TRIDENT</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Trident Timing Hardware. All rights reserved.
+              © 2026 Onetime Holdings Pty Ltd. All rights reserved.
             </p>
           </div>
         </div>
