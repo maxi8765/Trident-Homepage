@@ -428,11 +428,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="py-12 border-t border-white/10 bg-black/20">
         <div className="container px-4 mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="flex items-center gap-2">
-              <Activity className="w-6 h-6 text-primary" />
-              <span className="font-display font-bold text-xl">TRIDENT</span>
-            </div>
+          <div className="flex justify-center items-center">
             <p className="text-sm text-muted-foreground">
               © 2026 Onetime Holdings Pty Ltd. All rights reserved.
             </p>
