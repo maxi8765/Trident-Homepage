@@ -166,9 +166,9 @@ export default function Home() {
                 <img 
                   src={productShot}
                   alt="Trident Reader" 
-                  className="w-full h-full object-contain bg-gradient-to-b from-gray-900 to-black p-4 group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-contain bg-gradient-to-b from-gray-100 to-gray-300 p-4 group-hover:scale-105 transition-transform duration-700 brightness-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="text-2xl font-bold font-display mb-2">Engineered for Extremes</div>
                   <div className="text-muted-foreground">IP68 Rated Waterproof & Dustproof Enclosures</div>
