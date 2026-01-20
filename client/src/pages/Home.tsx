@@ -294,7 +294,8 @@ export default function Home() {
           </div>
           
           <p className="text-center text-muted-foreground text-sm max-w-5xl mx-auto">
-            * Other mat sizes available. Personalization of mats — request a quote.
+            * Other mat sizes available. Personalization of mats — request a quote.<br />
+            ** Bundle offers available — please contact us for details.
           </p>
         </div>
       </section>
