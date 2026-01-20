@@ -367,7 +367,7 @@ export default function Home() {
                 Mobile <span className="text-primary">App</span>
               </motion.h2>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Trident is managed through a browser-based progressive web app. No local software required. 
+                Trident is managed through a browser-based progressive web app on your mobile phone. No local software required. 
                 Connects via Reader STA WiFi. Configure RFID readers, monitor status, manage connectivity, 
                 apply firmware updates, and route data. Provides redundant data backup locally and to any cloud storage. 
                 Operators select their preferred timing software and data ingestion endpoint during setup.
