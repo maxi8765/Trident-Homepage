@@ -88,7 +88,7 @@ export function ContactForm() {
                 <FormLabel>Message</FormLabel>
                 <FormControl>
                   <Textarea 
-                    placeholder="Tell us about your timing needs..." 
+                    placeholder="Tell us about your timing needs or ask us for a quote..." 
                     className="bg-background/50 border-white/10 focus:border-primary/50 min-h-[120px]" 
                     {...field} 
                   />
