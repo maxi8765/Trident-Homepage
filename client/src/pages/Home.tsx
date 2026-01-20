@@ -322,7 +322,6 @@ export default function Home() {
                   { label: "Updates", value: "Over-the-air firmware and configuration" },
                   { label: "Software Integration", value: "LLRP and legacy formats including IPICO" },
                   { label: "Compatibility", value: "Works with any timing software" },
-                  { label: "Cloud Integration", value: "Compatible with any cloud data ingestion endpoint" },
                   { label: "UHF Tags", value: "Unlocked — use any supplier, or use ours" },
                   { label: "HF Tags", value: "Reusable waterproof multi-year active shoe-tags and multi-sport tags" },
                 ].map((spec, i) => (
@@ -342,6 +341,7 @@ export default function Home() {
                   <div className="text-5xl font-bold text-white mb-2">Open System</div>
                   <div className="text-xl text-blue-300 uppercase tracking-widest">No Proprietary Lock-In</div>
                   <div className="text-sm text-muted-foreground mt-2">Compatible with any timing software</div>
+                  <div className="text-sm text-muted-foreground mt-1">Compatible with any cloud data ingestion endpoint</div>
                 </div>
               </div>
             </div>
