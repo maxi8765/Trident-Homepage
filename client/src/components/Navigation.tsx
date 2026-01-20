@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoImg from "@assets/ChatGPT_Image_Jan_20,_2026,_10_16_10_AM_1768868203744.png";
+import logoImg from "@assets/trident_powered_by_onetime_logo_1768870135058.png";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
