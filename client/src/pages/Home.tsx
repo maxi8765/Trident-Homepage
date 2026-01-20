@@ -4,7 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { ProductCard } from "@/components/ProductCard";
 import { ContactForm } from "@/components/ContactForm";
 import { useProducts } from "@/hooks/use-products";
-import heroBg from "@assets/slide_2_1768867480432.png";
+import heroBg from "@assets/marathon-250987_1920_1768869334542.jpg";
 import productShot from "@assets/slide_1_1768867480431.png";
 import appScreen1 from "@assets/Screenshot_2026-01-20-10-17-42-30_40deb401b9ffe8e1df2f1cc5ba48_1768869177745.jpg";
 import appScreen2 from "@assets/Screenshot_2026-01-20-10-17-45-01_40deb401b9ffe8e1df2f1cc5ba48_1768869177746.jpg";
