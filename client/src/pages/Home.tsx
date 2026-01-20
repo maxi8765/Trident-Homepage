@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Check, Activity, Battery, Cloud, Wifi, ChevronDown } from "lucide-react";
+import { ArrowRight, Check, Activity, Battery, Cloud, Wifi, ChevronDown, Loader2 } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { ProductCard } from "@/components/ProductCard";
 import { ContactForm } from "@/components/ContactForm";
