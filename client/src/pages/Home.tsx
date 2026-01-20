@@ -80,8 +80,8 @@ export default function Home() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto"
           >
-            Invest in the next generation RFID chip timing. 
-            An open system built for reliability, designed for speed.
+            Invest In Trident V2 Hardware. 
+            Make timing the easiest part of your day.
           </motion.p>
 
           <motion.div
@@ -128,20 +128,20 @@ export default function Home() {
               variants={staggerContainer}
             >
               <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
-                Redefining <span className="text-primary">Reliability</span>
+                Making Timing The <span className="text-primary">Easiest Part</span> Of Your Day
               </motion.h2>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Trident hardware represents the pinnacle of UHF and Active HF timing technology. 
-                Designed for the harshest environments and the most demanding races, our systems 
-                deliver 99.9% read rates where others fail.
+                Since 2016, Trident has provided premier professional RFID timing solutions for mass participation 
+                endurance events worldwide. Our equipment delivers precise, reliable timing with minimal labor costs 
+                and timing errors.
               </motion.p>
               
               <motion.div variants={fadeIn} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  { icon: Activity, title: "99.9% Accuracy", desc: "Industry leading read rates" },
-                  { icon: Battery, title: "10 Year Battery", desc: "Active tags that last a decade" },
-                  { icon: Cloud, title: "Cloud Connected", desc: "Real-time data synchronization" },
-                  { icon: Wifi, title: "API Support", desc: "Seamless integration with any software" },
+                  { icon: Activity, title: "Timing Mastery", desc: "Passive UHF, active HF waterproof (IP-68), webapp management & monitoring" },
+                  { icon: Settings, title: "Equipment Empowerment", desc: "Simplify complex tasks, amplify productivity, unlock buying freedom" },
+                  { icon: Cloud, title: "White Labelling", desc: "Elevate your brand, elevate your customers' brand" },
+                  { icon: Battery, title: "Revenue & Profit Amplification", desc: "Invest less capital, reduce operating costs" },
                 ].map((feature, i) => (
                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                     <feature.icon className="w-8 h-8 text-primary shrink-0" />
@@ -249,16 +249,16 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* UHF Column */}
             <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-blue-500 hover:border-blue-400 transition-colors">
-              <h3 className="text-2xl font-bold mb-2">Trident UHF</h3>
-              <p className="text-sm text-blue-400 font-mono mb-6">Passive RFID Technology</p>
+              <h3 className="text-2xl font-bold mb-2">Passive UHF</h3>
+              <p className="text-sm text-blue-400 font-mono mb-6">Mass Participation Running/Cycling</p>
               
               <ul className="space-y-4">
                 {[
-                  "Disposable Tags (~$0.26/tag)",
-                  "Best for Mass Participation events",
-                  "99.5% Read Accuracy",
-                  "Range: 4-8 meters",
-                  "No battery in tag required"
+                  "Unlocked - use any supplier tags/bibs",
+                  "Validated tags/bibs also available",
+                  "Best for mass participation events",
+                  "6 sigma reliability detection",
+                  "Open software protocols (LLRP, IPICO)"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
@@ -272,16 +272,16 @@ export default function Home() {
             <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-purple-500 hover:border-purple-400 transition-colors relative overflow-hidden">
               <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 blur-2xl rounded-full" />
               
-              <h3 className="text-2xl font-bold mb-2">Trident Active</h3>
-              <p className="text-sm text-purple-400 font-mono mb-6">Active Transponder Technology</p>
+              <h3 className="text-2xl font-bold mb-2">Active HF</h3>
+              <p className="text-sm text-purple-400 font-mono mb-6">Extreme Events - Triathlon, MTB, Swimming</p>
               
               <ul className="space-y-4">
                 {[
-                  "Reusable Tags (10yr Battery)",
-                  "Best for Triathlon, Cycling, Mud Runs",
-                  "99.99% Read Accuracy",
-                  "Range: 20+ meters",
-                  "Works through water & mud"
+                  "Reusable 10 year tags (shoe & multi-sport)",
+                  "QR coded for self check-in",
+                  "Works through water & mud",
+                  "Green tag reuse option - lowest carbon footprint",
+                  "University research validated sustainability"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
@@ -302,11 +302,13 @@ export default function Home() {
               <h2 className="text-4xl font-display font-bold mb-8">Technical Specifications</h2>
               <div className="space-y-6">
                 {[
-                  { label: "IP Rating", value: "IP68 (Waterproof up to 1.5m)" },
-                  { label: "Battery Life", value: "12 Hours (System) / 10 Years (Tags)" },
-                  { label: "Connectivity", value: "4G LTE, WiFi, Ethernet, Bluetooth" },
-                  { label: "Operating Temp", value: "-20°C to +60°C" },
-                  { label: "Construction", value: "Impact Resistant Polycarbonate" },
+                  { label: "Dimensions", value: "3.8 x 7.3 x 4.1 inches (9.5 x 18.5 x 10.5cm)" },
+                  { label: "Weight", value: "Only 4.75 pounds (1.7 kg)" },
+                  { label: "IP Rating", value: "IP68 Waterproof, single button operation" },
+                  { label: "Battery Life", value: "10 hrs (UHF) / 72 hrs (HF)" },
+                  { label: "Connectivity", value: "Global SIM, LoRa (10km), Wi-Fi, Dual POE" },
+                  { label: "Updates", value: "OTA firmware updates" },
+                  { label: "Compatibility", value: "Works with any timing software" },
                 ].map((spec, i) => (
                   <div key={i} className="flex justify-between items-center py-4 border-b border-white/10">
                     <span className="text-muted-foreground">{spec.label}</span>
@@ -321,9 +323,9 @@ export default function Home() {
               <div className="absolute inset-0 bg-[url('https://pixabay.com/get/g36e26b729afbda4341e787666882dac0eb053391cf7e6c8442ebc3e678db1ae1d261248774c37bcf47eb037da219ed62fd9cac45a2f5cee26c915e54c7e1bf0e_1280.jpg')] bg-cover bg-center mix-blend-overlay opacity-50" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8 backdrop-blur-sm bg-black/30 rounded-xl border border-white/10">
-                  <div className="text-6xl font-bold text-white mb-2">10</div>
-                  <div className="text-xl text-blue-300 uppercase tracking-widest">Year Warranty</div>
-                  <div className="text-sm text-muted-foreground mt-2">On all Active Tags</div>
+                  <div className="text-5xl font-bold text-white mb-2">Open System</div>
+                  <div className="text-xl text-blue-300 uppercase tracking-widest">No Ongoing Lock-In</div>
+                  <div className="text-sm text-muted-foreground mt-2">Compatible with any timing software</div>
                 </div>
               </div>
             </div>
