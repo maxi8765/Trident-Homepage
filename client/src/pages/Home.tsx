@@ -133,8 +133,11 @@ export default function Home() {
               <motion.h2 variants={fadeIn} className="text-4xl md:text-5xl font-display font-bold mb-6">
                 Professional Timing, <span className="text-primary">Open System</span>
               </motion.h2>
+              <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                Trident readers are professional RFID chip readers designed for endurance event timing.
+              </motion.p>
               <motion.p variants={fadeIn} className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                Trident readers are professional RFID chip readers designed for endurance event timing. 
+                Best-in-class accuracy and precision specifications, engineered to minimise RF interference, missed reads, packet loss, and timing gaps under highest throughput and adverse conditions. 
                 The platform is built as an open system — you bring your own timing software and UHF tags if you want. 
                 No proprietary lock-in. The system reduces labour, lowers operational risk, and scales from small events to mass participation.
               </motion.p>
