@@ -13,13 +13,13 @@
   --background: 224 71% 4%;
   --foreground: 210 40% 98%;
 
-  /* Trident Blue - Primary Action Color */
-  --primary: 217 91% 60%;
-  --primary-foreground: 224 71% 4%;
+  /* Trident Purple - Primary Action Color */
+  --primary: 280 60% 45%;
+  --primary-foreground: 210 40% 98%;
 
-  /* Tech Purple - Secondary/Accent */
-  --secondary: 262 80% 50%;
-  --secondary-foreground: 210 40% 98%;
+  /* Tech Blue - Secondary */
+  --secondary: 217 91% 60%;
+  --secondary-foreground: 224 71% 4%;
 
   /* Muted Technical Gray */
   --muted: 215 25% 15%;
@@ -34,7 +34,7 @@
 
   --border: 215 25% 20%;
   --input: 215 25% 20%;
-  --ring: 217 91% 60%;
+  --ring: 280 60% 45%;
 
   --card: 224 71% 6%;
   --card-foreground: 210 40% 98%;
@@ -64,7 +64,7 @@
   }
 
   .glow-text {
-    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+    text-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
   }
 }
 

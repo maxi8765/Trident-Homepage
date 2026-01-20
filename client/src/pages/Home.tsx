@@ -86,7 +86,7 @@ export default function Home() {
           >
             <a 
               href="#products"
-              className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-blue-400 transition-all shadow-[0_0_30px_rgba(37,99,235,0.4)] hover:shadow-[0_0_50px_rgba(37,99,235,0.6)] hover:-translate-y-1 flex items-center justify-center gap-2"
+              className="px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-purple-500 transition-all shadow-[0_0_30px_rgba(139,92,246,0.4)] hover:shadow-[0_0_50px_rgba(139,92,246,0.6)] hover:-translate-y-1 flex items-center justify-center gap-2"
             >
               View Products <ArrowRight className="w-5 h-5" />
             </a>

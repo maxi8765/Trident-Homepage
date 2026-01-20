@@ -70,7 +70,7 @@ export function Navigation() {
             ))}
             <a
               href="#contact"
-              className="px-6 py-2 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-blue-400 transition-colors shadow-lg shadow-primary/25"
+              className="px-6 py-2 rounded-full bg-primary text-primary-foreground font-semibold hover:bg-purple-500 transition-colors shadow-lg shadow-primary/25"
             >
               Get Quote
             </a>
