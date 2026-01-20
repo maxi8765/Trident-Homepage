@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoImg from "@assets/logo_1768867394387.png";
+import logoImg from "@assets/logo-removebg-preview_1768867815888.png";
 
 const NAV_ITEMS = [
   { label: "Overview", href: "/#overview" },
