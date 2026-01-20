@@ -545,6 +545,10 @@ export default function Home() {
                 <span className="text-primary">•</span>
                 <span>Transparent hardware pricing and published specifications, enabling clear cost comparison and procurement planning without opaque bundle or ecosystem pricing.</span>
               </p>
+              <p className="flex gap-3">
+                <span className="text-primary">•</span>
+                <span>Smallest, most lightweight readers in the industry — making your day easier.</span>
+              </p>
             </div>
           </div>
         </div>
