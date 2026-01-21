@@ -10,7 +10,6 @@ const NAV_ITEMS = [
   { label: "Products", href: "/#products" },
   { label: "Specs", href: "/#specs" },
   { label: "Mobile App", href: "/#app" },
-  { label: "Prices", href: "/#prices" },
   { label: "Why Invest", href: "/#why-invest" },
   { label: "Contact", href: "/#contact" },
 ];

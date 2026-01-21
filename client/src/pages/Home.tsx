@@ -437,65 +437,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRICES SECTION */}
-      <section id="prices" className="py-24 relative">
-        <div className="container px-4 mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4">Prices</h2>
-            <p className="text-muted-foreground">Full pricing for our 2025 hardware lineup</p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
-            {/* Active HF Column */}
-            <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-purple-500">
-              <h3 className="text-2xl font-bold mb-6 text-purple-400">Active HF</h3>
-              <div className="space-y-6">
-                {[
-                  { item: "Active HF Decoders (Reader)", price: "US$2,535.00", unit: "each" },
-                  { item: "Active HF Mats", price: "US$65.00", unit: "per m" },
-                  { item: "Active HF Shoe Tags", price: "US$6.89", unit: "each" },
-                  { item: "Active HF Multisport Tags", price: "US$14.63", unit: "each" },
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-3 border-b border-white/10">
-                    <span className="text-gray-300">{row.item}</span>
-                    <div className="text-right">
-                      <span className="font-bold text-white">{row.price}</span>
-                      <span className="text-muted-foreground text-sm ml-2">{row.unit}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* UHF Column */}
-            <div className="glass-panel p-8 rounded-2xl border-t-4 border-t-blue-500">
-              <h3 className="text-2xl font-bold mb-6 text-blue-400">Passive UHF</h3>
-              <div className="space-y-6">
-                {[
-                  { item: "UHF Decoders (Reader)", price: "US$2,535.00", unit: "each" },
-                  { item: "8m Fold-Up UHF Mats", price: "US$1,300.00", unit: "each" },
-                  { item: "UHF Tags", price: "US$0.26", unit: "each" },
-                ].map((row, i) => (
-                  <div key={i} className="flex justify-between items-center py-3 border-b border-white/10">
-                    <span className="text-gray-300">{row.item}</span>
-                    <div className="text-right">
-                      <span className="font-bold text-white">{row.price}</span>
-                      <span className="text-muted-foreground text-sm ml-2">{row.unit}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          
-          <p className="text-center text-muted-foreground text-sm max-w-5xl mx-auto">
-            * Other mat sizes available. Personalization of mats — request a quote.<br />
-            ** Bundle offers available — please contact us for details.<br />
-            *** No-upfront and limited-upfront payment deals available — please contact us for details.
-          </p>
-        </div>
-      </section>
-
       {/* WHY INVEST SECTION */}
       <section id="why-invest" className="py-24 relative">
         <div className="container px-4 mx-auto max-w-4xl">
