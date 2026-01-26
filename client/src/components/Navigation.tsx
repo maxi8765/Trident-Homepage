@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: "Mobile App", href: "/#app" },
   { label: "Why Invest", href: "/#why-invest" },
   { label: "Contact", href: "/#contact" },
+  { label: "Reserve", href: "/reserve" },
 ];
 
 export function Navigation() {
@@ -27,13 +28,24 @@ export function Navigation() {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    // Smooth scroll to element if on home page
+    
+    // Handle anchor links to home page sections
     if (href.startsWith("/#")) {
       const id = href.substring(2);
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+      
+      // If we're on the home page, just scroll
+      if (location === "/") {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // Navigate to home page with hash
+        window.location.href = href;
       }
+    } else {
+      // For regular routes like /reserve, navigate directly
+      window.location.href = href;
     }
   };
 
